@@ -1,0 +1,13 @@
+{
+    "host": "",
+    "from": "",
+    "to": "",
+    "subject": "",
+    "text": "",
+    "port": 465,
+    "secure": true,
+    "auth": {
+        "user": "",
+        "pass": ""
+    }
+}

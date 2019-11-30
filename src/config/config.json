@@ -1,0 +1,9 @@
+{
+    "emailNotify": true,
+    "wechatNotify": false,
+    "maxMinite": 10,
+    "maxStations": 4,
+    "maxDistance": null,
+    "fromTime": "18:40:00",
+    "toTime": "19:30:00"
+}
