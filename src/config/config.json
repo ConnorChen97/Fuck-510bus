@@ -1,5 +1,5 @@
 {
-    "emailNotify": true,
+    "emailNotify": false,
     "wechatNotify": false,
     "maxMinite": 10,
     "maxStations": 4,

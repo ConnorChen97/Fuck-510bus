@@ -1,4 +1,4 @@
 node_modules
-bus.html
+*.html
 package-lock.json
 email-config.json
