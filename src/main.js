@@ -86,12 +86,17 @@ const sendNotify = (data) => {
     return false;
 }
 
+const getBusInfo = async () => {
+    const data = await parseHTML();
+    mailOptions.text = data;
+    console.log(moment().format('YYYY-MM-DD HH:mm:ss ') + data);
+    return data;
+}
+
 const start = async () => {
+    await getBusInfo();
     setInterval(async () => {
-        const data = await parseHTML();
-        mailOptions.text = data;
-        const isSendNotify = sendNotify(data);
-        console.log(moment().format('YYYY-MM-DD HH:mm:ss ') + data);
+        const isSendNotify = sendNotify(await getBusInfo());
         config.emailNotify && isSendNotify && transporter.sendMail(mailOptions, function(error, info){
             if (error) {
                 console.log(error);
