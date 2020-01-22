@@ -58,7 +58,7 @@ const writeToFile = (data) => {
 
 const parseHTML = async () => {
     const HTML = await getHTML(url);
-    // writeToFile(HTML);
+    writeToFile(HTML);
     const $ = cheerio.load(HTML);
     const content = $('p').text().split('所属客一分公司')[1];
     return content.replace('此', '林萃路口北');
