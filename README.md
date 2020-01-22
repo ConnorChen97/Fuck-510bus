@@ -13,5 +13,3 @@
 2. start application
 - npm i
 - npm start or node src/main.js
-
-test
